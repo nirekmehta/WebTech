@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nirek's Interests</title>
+    <link rel="stylesheet" type="text/css" href="externalstylesheet.css" />
+    <style>
+        body {
+            background-color: #87ceeb;
+            background-image:url(https://media.istockphoto.com/photos/abstract-ice-christmas-blue-white-winter-background-sea-surf-pattern-picture-id1285333426?b=1&k=20&m=1285333426&s=170667a&w=0&h=tJmZ4O8GJMIaW90WZeZb5RK5WSu_FWIi1ph0NF20eLs=);
+        }
+
+        h1 {
+            text-align: center;
+            font-family: Verdana;
+            font-size: x-large;
+            font-style: oblique;
+            color: maroon;
+        }
+
+        h2 {
+            text-align: center;
+            font-family: Georgia;
+            font-size: larger;
+            font-style: italic;
+            color: red;
+            border: navy;
+            border-style: solid;
+            padding-top: 30px;
+            padding-right: 10%;
+            padding-bottom: 10px;
+            padding-left: 15%;
+        }
+
+        p {
+            text-align: center;
+            float:inline-end;
+        }
+
+        .pbord {border: 9px solid rgb(138, 24, 214)}
+        .interests a:hover{font-size: 120%;}
+        .col{background-color: lavender;}
+        .def{background-color:lightskyblue;}
+        .abc{background-color:moccasin;}
+        h2+p::first-letter{color:black;}
+
+        .Nav_Bar {position: sticky; top: 0px; left: 0px; width: 100%;}
+.Nav_Bar ul {list-style-type: none; margin: 0; padding: 0; overflow: auto; background-color:slateblue; border-radius: 5px;}
+.Nav_Bar li {float: left;}
+.Nav_Bar li a {display: inline-block; color: white; text-align: center; padding: 15px; text-decoration: none; min-width: 100px; font-weight:lighter;}
+.Nav_Bar a.Active {background-color: cadetblue;}
+.Nav_Bar li a:hover, .Nav_Bar a.Active:hover {background-color: cadetblue;}
+.Nav_Bar .Dropdown_Content {display: none; position: absolute; background-color:lightskyblue; min-width: 100px; z-index: 1; }
+.Nav_Bar .Dropdown_Content a {display: block; text-align: left;}
+.Nav_Bar li.Dropdown:hover .Dropdown_Content {display: block;}
+
+
+    </style>
+</head>
+
+<body>
+    <h1>My Interests: </h1>
+    <hr>
+    <!--This is a webpage about my interests-->
+    <div class="Nav_Bar">
+        <ul>
+            <li><a href="index.html" class="Active">Home</a></li>
+            <li class="Dropdown">
+              <a href="interests.html">Search Engines</a>
+                <div class="Dropdown_Content">
+                    <a href="http://www.google.com">Google</a>
+                    <a href="http://www.Bing.com">Bing</a>
+                </div>
+            </li>
+            </ul>
+            </div>
+    <br>
+   <p class = 'interests'><ol> <li>My <i>interests </i>include <a href="#anchor1" a:hover><ul><li>watching TV,</li></a> <a href="#anchor2"><li>listening to music</a> and</li>  <a
+            href="#anchor3"><li>travelling</a>.</li></ul></li></ol></p>
+            <div class="col">
+    <h2 class ="pbord" id="anchor1">Watching TV</h2>
+    <p>I am currently watching <b>Drive to Survive </b>on Netflix&copy;</p></div>
+    <div class="def">
+    <h2 class ="pbord" id="anchor2">Listening to Music</h2>
+    <p>My favourite artist is A&dollar;AP ROCKY</p></div>
+    <div class="abc">
+    <h2 class ="pbord" id="anchor3">Travelling</h2>
+    
+    <p>The city I loved visiting the most was Dubai</p><br>
+</div>
+    <h1><img src="Dubai.jpg" usemap="#image-map">
+
+        <map name="image-map">
+            <area target="" alt="Dubai" title="Dubai" href="https://en.wikipedia.org/wiki/Dubai" coords="0,0,702,875" shape="rect">
+            <area target="" alt="Burj Al Arab" title="Burj Al Arab" href="https://en.wikipedia.org/wiki/Burj_Al_Arab" coords="780,75,1140,560" shape="rect">
+        </map> </h1>
+   <!--
+<p>To my <a href="index.html">Index</a></p><br>
+
+   --> 
+</body>
+
+</html>
