@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All About Nirek</title>
+    <link rel="stylesheet" type="text/css" href="externalstylesheet.css" />
+    <style>
+        body {background-color:steelblue;
+        background-image: url(https://imgc.allpostersimages.com/img/posters/zoom-zoom-light-blue-spring-sky-with-clouds-may-be-used-as-background_u-L-Q105PYL0.jpg);}
+        h1 {text-align: center;font-family:Arial; font-size:x-large; font-style:italic;border-color: firebrick; border-style:double;padding-top: 30px; padding-right: 10%; padding-bottom: 10px;padding-left: 15%; text-shadow: 5px 5px 3px grey;}
+        h2{text-align: center; font-family: Georgia; font-size: larger; font-style:oblique;}
+        p{text-align: center; color:black; float:inline-start;}
+        .mbord {border: solid 9px crimson}
+        span {font-variant: small-caps; font-style: italic;}
+    </style>
+    <script>
+
+      function ChgStyle()
+      {
+        x = document.getElementById("myh1")
+     
+        
+     x.style.color="green";
+     x.style.font="30pt 'Comic Sans MS'";
+     x.style.textAlign="center";
+
+      }
+     function ChgToImg()
+	   {
+
+	   		document.getElementById("i1").src="AboutMe.jpg";
+	   } 
+	   function ChgToDive()
+	   {
+	   	
+		document.getElementById("i1").src="nirek.jpg";
+	 
+
+      } 
+function chng(){document.getElementById("text").innerHTML="I also love eating food!"}
+      
+ 
+    
+   </script>
+</head>
+<body>
+    <h1 style = "border:rebeccapurple; border-style: solid;" id="myh1" onclick="ChgStyle()">All About Nirek!</h1>
+<p>To my <a href ="interests.html">Interests</a></p>
+  <p><ol><li>I come from <b style = "color: salmon;"><span>Mumbai,</span></b> <i>India.</i></p> <hr>
+  <p> <ul><li> My 
+      email is: nmehta7@babson.edu</li>
+      <li>My phone number is : 6176507454</li>
+      </ul>
+    </li>
+</ol>
+  </p> 
+  <h1 class = "mbord"><img id="i1" src = "nirek.jpg" alt = "This is me" onmouseover="ChgToImg()" onmouseout="ChgToDive()" width= "250px" /></h1>
+  <br>
+  <p id = "text" onclick="chng()"> Something interesting about myself is that I love travelling!</p> <br>
+  
+</body>
+</html>
