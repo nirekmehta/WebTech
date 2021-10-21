@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Index</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+	<script>
+	function chgPos()
+	{	var var1=Math.floor(1+Math.random()*501)+"px";
+		var var2=Math.floor(1+Math.random()*501)+"px";
+		document.getElementById("btn").style.top=var1;
+		document.getElementById("btn").style.left=var2;
+	}
+	var text = new Array ("Move Me", "Click Here", "Button", "Next")
+	function chgTxt(){
+
+		var textNumber=Math.floor(Math.random()*text.length);
+			document.getElementById("txt").innerHTML=text[textNumber];
+	}
+	</script>	
+</head>
+<body>
+	<button style="position:absolute; top:0px; left:0px" onclick="chgPos()" id="btn">
+		<p id="txt" onclick="chgTxt()">
+		Click Me!
+	</p>
+	</button>
+	
+	
+</body>
+</html>
