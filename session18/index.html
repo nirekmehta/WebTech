@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>session18</title>
+    <style>
+    canvas { border: 1px solid black; width:500px; height:500px}
+    </style>
+
+    <script>
+        function drawBus(){
+            var canvas = document.getElementById('bus');
+            var ctx = canvas.getContext('2d');
+            ctx.beginPath();
+			ctx.rect(25,25,100,50); //Body of Bus
+			ctx.fillStyle="red"
+			ctx.fill();
+            ctx.stroke();
+
+			ctx.fillStyle="black";
+			ctx.lineWidth=2;
+            ctx.beginPath();
+            ctx.arc(115,87,12,0,Math.PI*2);  // Left tire
+            ctx.stroke();
+            ctx.fill();
+
+            ctx.fillStyle="black";
+			ctx.lineWidth=2;
+            ctx.beginPath();
+            ctx.arc(35,87,12,0,Math.PI*2);  // Right tire
+            ctx.stroke();
+            ctx.fill();
+
+            ctx.beginPath();
+			ctx.rect(25,25,40,25); //Window of Bus
+			ctx.fillStyle="white"
+			ctx.fill();
+            ctx.stroke();
+
+		}
+    </script>
+</head>
+<body onload="drawBus()">
+    <canvas id="bus" width="150" height="150"></canvas>    
+</body>
+</html>
