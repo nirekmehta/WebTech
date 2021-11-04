@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Age Calculator</title>
+	<script>
+		var curDate = new Date();
+		function calcbd(){
+			var m= document.getElementById("mo").value - 1;  
+			var d= document.getElementById("day").value;
+			var y= document.getElementById("yr").value;
+
+			var curYear = curDate.getFullYear()
+			var birthday = new Date(y,m,d)
+
+			var dif =  curDate - birthday
+
+			dif = dif/(60*60*365.25*1000*24)
+			dif = Math.floor(dif);
+
+			document.getElementById("ans").innerHTML = dif + " Years old!"
+
+		}	
+		
+		
+		</script>
+
+</head>
+<body>
+	<p>Enter your birthday below</p>
+	<p>Month <input type="text" name="mo" id="mo" size="2" />&nbsp;&nbsp;&nbsp;&nbsp;
+		Day <input type="text" name="day" id="day" size="2" /></p> &nbsp;&nbsp;&nbsp;&nbsp;
+		Year <input type="text" name="year" id="yr" size="2" />&nbsp;&nbsp;&nbsp;&nbsp;
+	<p><button type="button" onclick="calcbd()">Calculate</button></p>
+
+	<p>You are: </p><span id="ans"></span>
+	
+</body>
+</html>
