@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+  $("#bt1").click(function(){
+    $("div").animate({left: '350px'});
+  });
+    });
+
+$(document).ready(function(){
+  $("#b1").click(function(){
+    alert("Text: " + $("#p1").text());
+  });
+  $("#b2").click(function(){
+    alert("HTML: " + $("#p1").html());
+  });
+
+  $(document).ready(function(){
+  $("#btn1").click(function(){
+    $("#pp").append(" <b>Ha</b>.");
+  });
+});
+
+$(document).ready(function(){
+  $("#but1").click(function(){
+    $("#div1").empty();
+  });
+});
+
+$(document).ready(function(){
+  $("#bttn1").click(function(){
+    $("#para1").toggleClass("red");
+  });
+});
+
+$(document).ready(function(){
+  $("#bto1").click(function(){
+    $("#d1").animate({
+      left: '250px',
+      opacity: '0.5',
+      height: '150px',
+      width: '150px'
+    });
+  });
+});
+
+$(document).ready(function(){
+  $("#bu1").click(function(){
+    $("#div1").delay("slow").fadeOut();
+  });
+});
+
+
+</script>
+<style>
+    .red {
+  color:red;
+}
+</style>
+</head>
+<body>
+    <h1>jQuery Effects Made Fun</h1>
+    <br>
+    <h2>Sliding Effect</h2>
+    <button id = "bt1">Start Animation</button>
+    <br><br>
+    <div style="background:#2178bf;height:35px;width:370px;position:absolute;color: aliceblue;text-align: center;"> I went to buy some camo pants but couldn’t find any.</div>
+    <br> <br>
+
+    <h2>Text or HTML Effects</h2>
+    <button id="b1">Show Text</button>
+    <button id="b2">Show HTML</button>
+   <p id="p1">I know they say that money talks, but all mine says is <i>‘Goodbye.’</i></p>
+
+   <h2>Appending Text</h2>
+   <button id="btn1">Append text</button><br>
+   <p id="pp">How funny were the jokes?</p>
+   
+   <h2>Clear the box if you don't like this joke! (DOM)</h2>
+   <div id="div1" style="height:35px;width:270px;border:3px solid blue;background-color:lavender; color:darkgoldenrod;">
+    Q: What do you call a fake noodle? <br> A: An im-pasta.
+</div>
+<br>
+<button id="but1">Clear</button>
+
+<h2>Change Color of this Joke!</h2>
+<button id = "bttn1">Change</button>
+<p id="para1">A termite walks into the bar and asks, ‘Is the bar tender here?’</p>
+
+<h2>Animation Effects</h2>
+<button id="bto1">Start Animation</button>  
+<br><br>
+<div style="background:salmon;height:35px;width:270px;position:absolute; color: seashell; text-align: center;" id="d1">Two fish are in a tank. One says, ‘How do you drive this thing?’</div> 
+<br>
+<br> 
+
+<h2>Fade Out</h2>
+<button id="bu1">Fade Out</button>  
+<div id="div1" style="width:35px;height:270px;display:none;background-color:black;color: red;">Hope you enjoyed!</div><br>
+</body>
+</html>
