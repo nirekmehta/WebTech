@@ -21,11 +21,17 @@
     <link rel="stylesheet" type="text/css" href="externalstylesheet.css">
     <style>
 h1{font-family:'Tangerine';}
-.style {border: 2px; border-style:solid; border-color:darkred; background-color:rgb(214,191,163); padding-left:120%; margin: 120%; padding-right:120%;}
+.style {border: 2px; border-style:solid; border-color:darkred; background-color:rgb(214,191,163); padding-left:20px; margin: 20px; padding-right:20px;}
     </style>
     <script src="http://code.jquery.com/jquery.min.js"></script>
     <script>
-        $(function(){
+        // <![CDATA[  
+var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));  
+if (mobile) {  
+         document.location="projectMobile.htm"
+}
+// ]]>
+       $(function(){
             $("#d1").fadeIn(3000);
         });
         function changeColor()
