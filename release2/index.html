@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Australia's Subpage name changed from Gold Coast to Great Barrier Reef-->
+    <!--The use of a <table> tag with a colspan are present on the pages of Great Barrier Reef, Hvar, Coasta Brava, Phuket-->
+    <!--The use of lists can be found on the pages of Great Barrier Reef, Hvar, Coasta Brava, Phuket, Equipment and Trivia-->
+    <!---Images with Hotspots can be found on the pages of Index, Australia, Spain, Croatia, Hvar-->
+    <!--Videos can be found on pages of Great Barrier Reef, Hvar, Coasta Brava, Phuket-->
+    <!--Background Audio can be found on the Home Page and the Trivia Page-->
+    <!---There is reference to a credit page that contains all the sites I have used while developping this website-->
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name= "description" content="Scuba Dive at locations suggested by me, ideal for all types of divers."/>
+    <meta name= "keywords" content="Dive with me, scuba dive, locations, dive in spain, dive in australia, dive in croatia, dive in thailand, dive in hvar, dive in great barrier reef, dive in phuket, dive in coasta brava, equipment, trivia, map"/>
+    <meta name= "author" content="Nirek Mehta"/>
+    <title>Dive With Me!</title>
+    <link rel="stylesheet" type="text/css" href="externalstylesheet.css">
+    <style>
+h1{font-family:'Tangerine';}
+.style {border: 2px; border-style:solid; border-color:darkred; background-color:rgb(214,191,163); padding-left:20px; margin: 20px; padding-right:20px;}
+    </style>
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <script>
+        // <![CDATA[  
+var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));  
+if (mobile) {  
+         document.location="projectMobile.htm"
+}
+// ]]>
+       $(function(){
+            $("#d1").fadeIn(3000);
+        });
+        function changeColor()
+		{
+			var myH1 = document.getElementById("h");
+			if (myH1.style.color == "lightgreen") myH1.style.color="white";
+			else myH1.style.color="lightgreen";
+			setTimeout("changeColor()",900);
+		}
+    </script>
+
+</head>
+<body>
+    <h1 id= "h" onmouseover="changeColor()">Scuba Dive With Me!</h1>
+    <div class="Nav_Bar">
+        <ul>
+            <li><a href="index.html" class="Active">Home</a></li>
+            <li class="Dropdown">
+              <a href="Australia.html">Australia</a>
+                <div class="Dropdown_Content">
+                    <a href="GreatBarrierReef.html">Great Barrier Reef</a>
+                </div>
+            </li>
+            <li class="Dropdown">
+                <a href="Croatia.html">Croatia</a>
+                  <div class="Dropdown_Content">
+                      <a href="hvar.html">Hvar</a>
+                  </div>
+              </li>
+              <li class="Dropdown">
+                <a href="Spain.html">Spain</a>
+                  <div class="Dropdown_Content">
+                      <a href="CoastaBrava.html">Coasta Brava</a>
+                  </div>
+              </li>
+              <li class="Dropdown">
+                <a href="Thailand.html">Thailand</a>
+                  <div class="Dropdown_Content">
+                      <a href="Phuket.html">Phuket</a>
+                  </div>
+              </li>
+              <li><a href="Equipment.html">Equipment</a></li>
+              <li><a href="Trivia.html">Trivia</a></li>
+              <li><a href="ContactUs.html">Contact Us</a></li>
+              <li><a href="AboutMe.html">About Me</a></li>
+             
+              
+          </ul>
+    </div>
+    <br>
+    <div class="style">
+        <h2 style="color:darkcyan">What is this site about?</h2>
+        <p id="d1" style="display: none;"> This website is the perfect introduction for first time divers. The website is divided into potential locations
+            that beginner divers could visit. The website also has a page on the diving equipment that gets used and how to make sure that 
+            the equipment is safe to use. The website also has interesting facts about scuba diving which is available to peruse for some light reading.
+            I have personally dived at three out of the four sites and can ensure that these locations are worth diving in. My favorite dive site has been Phuket and I have uploaded some personal footage from my dive.</p>
+            <br>
+            <p style="text-align: center;">
+            <audio controls src="Audio.mp3"></audio></p>
+    </div>
+    <br>
+    <div class = "style">
+    <h2 style="color:darkcyan">Click on any of the highlighted areas</h2>
+</div>
+    <p style="text-align: center;">
+        <br>
+        <img src="world-map.JPG" alt = "World Map with the Dive sites" usemap="#image-map" width="890" height="590" id="b1">
+
+<map name="image-map">
+    <area alt="Australia" title="Australia" href="Australia.html" coords="692,372,826,495" shape="rect">
+    <area alt="Croatia" title="Croatia" href="Croatia.html" coords="443,203,476,241" shape="rect">
+    <area alt="Spain" title="Spain" href="Spain.html" coords="385,215,432,260" shape="rect">
+    <area alt="Thailand" title="Thailand" href="Thailand.html" coords="660,282,701,328" shape="rect">
+</map></p>
+<br> 
+<p style="text-align: center;">Image Source: Hovia.com <br>
+Audio Source: <a href = "https://www.youtube.com/watch?v=aUeCnyQi3bQ">YouTube</a></p>
+
+</body>
+</html>
