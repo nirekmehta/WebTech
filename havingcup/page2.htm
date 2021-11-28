@@ -16,6 +16,13 @@
 	
 	<script src="https://code.jquery.com/jquery.min.js"></script>
 	<script>
+	// <![CDATA[  
+		var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase()));  
+		if (mobile) {  
+				document.location="page2mobile.htm"
+		}
+		// ]]>
+		
 	$(document).ready(function(){
 		$("#im1").animate({marginLeft:'420px'},3000).delay(2000).animate({marginRight:'420px', marginLeft: '0px'},3000);
 	   });
